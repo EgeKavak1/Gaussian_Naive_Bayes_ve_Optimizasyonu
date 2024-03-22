@@ -1,10 +1,10 @@
-# yzm208_bayes_odev
+# Gaussian_Naive_Bayes_ve_Optimizasyonu
 ## Giriş (Özet)
-Bu çalışma, Naive Bayes sınıflandırma algoritmasının kullanımını ve hiperparametrelerin etkisini incelemeyi amaçlamaktadır. Naive Bayes, makine öğrenmesinde sınıflandırma problemleri için sıkça kullanılan bir olasılık tabanlı bir algoritmadır. Bu çalışmada, diyabet veri seti üzerinde Gaussian Naive Bayes algoritması kullanılarak, veri setinin özelliklerine dayanarak bir kişinin diyabet hastası olup olmadığını tahmin etmek için bir model oluşturulmuştur. Ayrıca, Randomize Search Cross Validation yöntemi kullanılarak en iyi hiperparametrelerin belirlenmesi ve veri setinin güç dönüşümü ve normalizasyonu ile modelin performansının iyileştirilmesi incelenmiştir.
+Bu çalışma, Gaussian Naive Bayes sınıflandırma algoritmasının kullanımını ve hiperparametrelerin etkisini incelemeyi amaçlamaktadır. Naive Bayes, makine öğrenmesinde sınıflandırma problemleri için sıkça kullanılan bir olasılık tabanlı bir algoritmadır. Bu çalışmada, diyabet veri seti üzerinde Gaussian Naive Bayes algoritması kullanılarak, veri setinin özelliklerine dayanarak bir kişinin diyabet hastası olup olmadığını tahmin etmek için bir model oluşturulmuştur. Ayrıca, Randomize Search Cross Validation yöntemi kullanılarak en iyi hiperparametrelerin belirlenmesi ve veri setinin güç dönüşümü ve normalizasyonu ile modelin performansının iyileştirilmesi incelenmiştir.
 
 ## Metot
-### Naive Bayes Algoritması
-Naive Bayes sınıflandırma algoritması, Bayes teoremi temel alınarak çalışır. Temel varsayım, bağımsız değişkenler arasındaki ilişkisizliktir, yani değişkenler arasındaki ilişkinin yokluğu varsayılır. Diyabet veri seti için kullanılan Gaussian Naive Bayes algoritması, bağımsız değişkenlerin normal dağılıma sahip olduğunu varsayar.
+### Gaussian Naive Bayes Algoritması
+Gaussian Naive Bayes sınıflandırma algoritması, Bayes teoremi temel alınarak çalışır. Temel varsayım, bağımsız değişkenler arasındaki ilişkisizliktir, yani değişkenler arasındaki ilişkinin yokluğu varsayılır. Diyabet veri seti için kullanılan Gaussian Naive Bayes algoritması, bağımsız değişkenlerin normal dağılıma sahip olduğunu varsayar.
 
 Model, eğitim veri setindeki her bir sınıf için özelliklerin olasılık yoğunluk fonksiyonlarını tahmin eder. Ardından, test veri setindeki özelliklerin bu olasılık yoğunluk fonksiyonlarına göre hangi sınıfa ait olduğunu tahmin eder. En yaygın kullanılan Gaussian Naive Bayes modelinde, özelliklerin her biri için bir normal dağılım varsayar ve bu dağılımların parametreleri (ortalama ve varyans) eğitim veri setinden tahmin edilir.
 
